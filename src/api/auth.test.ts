@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getAPIKey } from "../api/auth.js";
+import { getAPIKey } from "./auth.js";
 
 describe("getAPIKey", () => {
   test("should return null if the authorization header is not present", () => {
@@ -32,4 +32,3 @@ describe("getAPIKey", () => {
     expect(result).toBe("valid-api-key");
   });
 });
-
