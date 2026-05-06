@@ -3,16 +3,10 @@ on:
     branches: [main]
 
 
-<<<<<<< Updated upstream
 jobs:
-  name: Deploy
-  runs-on: ubuntu-latest
-=======
-job:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
->>>>>>> Stashed changes
 
     steps:
       - name: Checkout code
