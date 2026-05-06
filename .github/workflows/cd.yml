@@ -3,21 +3,28 @@ on:
     branches: [main]
 
 
+<<<<<<< Updated upstream
 jobs:
   name: Deploy
   runs-on: ubuntu-latest
+=======
+job:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+>>>>>>> Stashed changes
 
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v6
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v6
-      with:
-        node-version: '22'
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
